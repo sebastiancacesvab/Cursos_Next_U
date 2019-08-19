@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+
+body {
+	font-family: 'Dancing Script', cursive;
+	background-color: #02010a;
+	
+}
+
+#contenido{
+	width:100%;
+	margin-left: auto;
+	margin-right: auto;
+	animation:slideIn 1s;
+}
+
+
+header {
+	padding: 5px;
+	background-color: #5b7989;
+	text-shadow: 2px 2px 2px  #02010a;
+	border-radius: 10px 10px 0px 0px;
+	-moz-border-radius: 10px 10px 0px 0px;
+	-webkit-border-radius: 10px 10px 0px 0px;
+	color:white;
+}
+
+header h1{
+	text-align:center;
+	width:100%;
+}
+
+nav a{
+	width:100%;
+	margin-left:10px;
+	color:white;
+}
+
+.linkActivo{
+	text-decoration:none;
+}
+
+img{
+	
+	margin-left: auto;
+	margin-right: auto;
+	width:80%;
+	margin:5px;
+	box-shadow: 2px 2px 2px #02010a;
+	-webkit-box-shadow: 2px 2px 2px #02010a;
+	-moz-box-shadow: 2px 2px 2px #02010a;
+}
+
+nav{
+	
+	width:100%;
+	text-align:center;	
+	font-size: 1.5em;
+	
+}
+
+footer {
+	
+	padding: 5px;
+	border-radius: 0px 0px 10px 10px;
+	-moz-border-radius: 0px 0px 10px 10px;
+	-webkit-border-radius: 0px 0px 10px 10px;
+	background-color:  #C6d5c5;
+	
+}
+
+footer div{
+	
+	width: 100%
+}
+
+#imagenSecundaria a,#imagenSecundaria a:visited, footer a, footer a:visited{
+	
+	color:black;
+}
+
+footer a:hover{
+	
+	color:blue;
+}
+
+
+/*Estilos Index y animaciones*/
+#hoverRotar
+{
+	-webkit-transition-property: -webkit-transform ;
+	-moz-transition-property: -moz-transform ;
+	-ms-transition-property: -ms-transform ;
+	-o-transition-property: -o-transform ;
+	transition-property: transform ;	
+	transition-duration: 1s;
+}
+
+
+#hoverRotar:hover
+{
+	box-shadow: 2px 2px 2px #82c3a6;
+	transform:rotate(10deg);
+	-ms-transform:rotate(10deg);
+	-webkit-transform:rotate(10deg);
+}
+
+#hoverMovIzq {
+	-webkit-transition-property: -webkit-transform ;
+	-moz-transition-property: -moz-transform ;
+	-ms-transition-property: -ms-transform ;
+	-o-transition-property: -o-transform ;
+	transition-property: transform ;	
+	transition-duration: 1s;
+}
+
+#hoverMovIzq:hover
+{
+	box-shadow: 2px 2px 2px #82c3a6;
+	transform:translate(20px,-5px);
+	-ms-transform:translate(20px,-5px);
+	-webkit-transform:translate(20px,-5px);
+}
+	
+#imagenCentral{
+	background-color:#82c3a6;
+	text-align:center;
+}
+
+#imagenSecundaria{
+	margin:auto 0; 
+	background-color:#d5c75f;
+	border:1px solid;
+	text-align:center;
+}
+
+/*Estilos Galería*/
+#imagenesGaleria{
+	background-color:#d5c75f;
+	text-align:center;
+}
+
+#imagenesGaleria img{
+	width:80%;
+}
+
+#imagenGaleria2,#imagenGaleria4,#imagenGaleria6
+{
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+	filter: grayscale(100%);
+}
+
+#imagenGaleria1{
+	-webkit-filter: blur(10px); /* Chrome, Safari, Opera */
+	filter: blur(10px);
+}
+
+#imagenGaleria3{
+	-webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
+	filter: sepia(90%);
+}
+
+@-webkit-keyframes slideIn{
+	0%{
+		margin-top:150%;
+	}
+	60%{
+		margin-top:-5%;
+	}
+	100%{
+		margin-top:0%;
+	}
+}
+
+@media (min-width: 900px) {
+	
+	#contenido{
+		max-width:900px;
+	}
+	
+	header{
+		display:flex;
+	}
+
+	header h1{
+		text-align:left;
+		width:50%;		
+		display:block;
+	}
+
+	nav{
+		width:50%;
+		text-align:right;		
+		display:block;		
+		margin: auto 0;
+	}
+	
+	#imagenSecundaria{
+		display:flex;
+	}
+	
+	#imagenSecundaria article{
+		margin-left:auto;
+		margin-right:auto;
+		width:50%;
+	}
+	
+	footer{
+		display:flex;
+	}
+	
+	footer div{		
+		width: 25%;
+		display:inline-block;
+		padding: 5px;
+	}
+	
+	#imagenesGaleria{
+		display:flex;
+		flex-wrap:wrap;
+	}
+	
+	#imagenesGaleria img{
+		
+		margin-left: auto;
+		margin-right: auto;
+		width:30%;
+	}
+}
