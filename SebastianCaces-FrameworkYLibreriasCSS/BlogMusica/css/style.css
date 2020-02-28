@@ -1,0 +1,46 @@
+@charset "utf-8";
+@media (max-width: 991px) {
+	.busqueda {
+		display: none;
+	}
+	
+	.contenido {
+		margin: 5px 10px;
+	}
+	
+	.logo-img {
+		margin: 0px 10px;
+		text-align: center;
+	}
+	
+	.redes-sociales {
+		text-align: center;
+	}
+}
+
+@media (min-width: 991px) {	
+	.redes-sociales {
+		text-align: right;
+	}
+	
+	.logo-img {
+		text-align: left;
+	}
+}
+
+.logo-img img {
+	height: 200px;
+}
+
+.img-circle{
+	border-radius: 50%;
+}
+
+.social-img {
+	border-radius: 10px;
+}
+
+.img-formulario {
+	width: 30px;
+	border-radius: 5px;
+}
